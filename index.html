@@ -27,42 +27,58 @@
   <p class="meta">JeJ — The Fasting Companion (Android app, package <code>com.arleybls.jej</code>)<br>
   Effective date: 3 September 2026</p>
 
-  <p class="lead">JeJ stores everything on your phone and sends nothing anywhere.
-  There are no accounts, no servers, no analytics, and no third parties.</p>
+  <p class="lead">JeJ stores your data on your phone and does not send it anywhere.
+  There are no accounts, no JeJ servers, no analytics, and no third-party services
+  in the app that receive your data.</p>
 
   <h2>What the app stores — on your device only</h2>
   <ul>
     <li>Your fasting history: start and end times, goal durations, the time zone a fast started in, and any optional mood rating or note you add.</li>
     <li>Your settings: language, appearance, color scheme, ring style, fasting schedule, reminder preferences, and notification choices.</li>
   </ul>
-  <p>All of this lives in a local database and local settings storage inside the app's private area on your phone. It is never uploaded, synced, or transmitted.</p>
+  <p>All of this lives in a local database and local settings storage inside the app's private area on your phone. JeJ does not upload, sync, or transmit it. Fasting history, mood ratings, and notes may be health-related information; JeJ keeps them on your device only and never uses them for advertising, sells them, or shares them.</p>
+
+  <h2>Onboarding health questions</h2>
+  <p>During setup, JeJ asks a few health questions (pregnancy or breastfeeding, diabetes, eating-disorder history, underweight, medication, and whether you are under 18) so it can show the right safety guidance or stop setup where fasting could be harmful. Your answers are used only in that moment, to choose the next screen. <strong>They are not saved</strong> — not on your device, not anywhere else — and they are never transmitted.</p>
 
   <h2>What the app does not do</h2>
   <ul>
     <li>No account or sign-in of any kind.</li>
-    <li>No collection or transmission of personal data.</li>
+    <li>No transmission of your personal data off the device. Your data is stored locally only — nothing is uploaded, synced, or shared by the app.</li>
     <li>No analytics, telemetry, crash reporting, or advertising SDKs.</li>
-    <li>No third-party services receive any data from the app.</li>
-    <li>No network requests. The app requests the standard network permission because its underlying framework includes it, but the app itself never contacts a server.</li>
+    <li>No third-party service receives data from the app automatically. (If you choose to share an export file, the app or person you share it with receives that file — see below.)</li>
+    <li>The released version of JeJ makes no network requests. The app includes the <code>android.permission.INTERNET</code> permission because the build framework declares it by default; JeJ does not use it to contact any server.</li>
   </ul>
+  <p>In the terms used by Google Play's Data Safety section: because nothing is transmitted off your device, JeJ collects no data and shares no data.</p>
 
   <h2>Notifications</h2>
-  <p>Reminders and phase notifications are scheduled locally on your device by the app. No notification service outside your phone is involved. You can choose reduced notification detail in the app's privacy settings, and you can disable notifications entirely in your system settings.</p>
+  <p>Reminders and phase notifications are scheduled locally on your device by the app. No notification service outside your phone is involved. The "Detailed notifications" setting in the app's privacy section lets you choose whether notifications name your fast, phases, and times, or show no fasting details; you can also disable notifications entirely in your system settings.</p>
 
   <h2>Export and import</h2>
-  <p>You can export your data as a file at any time. The export is created on your device and goes only where you choose to save or share it. Importing reads a file you select. The app never sends these files anywhere on its own.</p>
+  <p>You can export your data as a file at any time. The export is created on your device and is saved or shared only through the destination you choose. JeJ does not receive the exported file or send it anywhere on its own. Once you save or share a file with another app, service, or person, that recipient's own privacy practices apply. Importing reads a file you select.</p>
 
-  <h2>Deleting your data</h2>
-  <p>The app includes a "Delete all data" option that permanently erases every fast, setting, and reminder on the device. Uninstalling the app also removes all of its data.</p>
+  <h2>Backups and deleting your data</h2>
+  <p>JeJ opts out of Android's automatic device backup, so your fasting data is not copied into device or cloud backups.</p>
+  <p>The app includes a "Delete all data" option that permanently erases every fast, setting, and reminder stored by JeJ on the device. Uninstalling the app also removes its local data. Neither action deletes export files you previously saved or shared elsewhere — those must be deleted separately, wherever you put them.</p>
+
+  <h2>Your rights (EU/EEA, UK, Brazil, and similar laws)</h2>
+  <p>Because your data never leaves your device, you exercise your rights directly in the app: you can view your data (access), edit fasts and notes (rectification), export a copy (portability), and erase everything with "Delete all data" or by uninstalling (erasure). There is no server-side copy to request or correct.</p>
+  <ul>
+    <li><strong>Controller:</strong> the individual developer who publishes JeJ on Google Play; contact below.</li>
+    <li><strong>Legal basis:</strong> your fasting history and settings are processed on your device to provide the service you asked for (GDPR Art. 6(1)(b)). Health-related entries you choose to add — mood ratings, notes — are processed only because you enter them, with your consent (GDPR Art. 9(2)(a)); you can withdraw it at any time by deleting them.</li>
+    <li><strong>Retention:</strong> data stays on your device until you delete it or uninstall the app. Nothing is retained anywhere else.</li>
+    <li><strong>International transfers:</strong> none — no data is transferred off your device.</li>
+    <li><strong>Complaints:</strong> you may lodge a complaint with your local data-protection authority (in the EU/EEA, your national supervisory authority; in Brazil, the ANPD).</li>
+  </ul>
 
   <h2>External links</h2>
-  <p>The app contains a link to an external support resource (the National Eating Disorders Association website). Tapping it opens your browser; the website you visit has its own privacy policy.</p>
+  <p>The app contains a link to an external support resource (the National Eating Disorders Association website). Tapping it opens your browser — the request is made by your browser, not by JeJ — and the website you visit has its own privacy policy.</p>
 
   <h2>Children</h2>
   <p>JeJ is designed for adults and is not intended for anyone under 18.</p>
 
   <h2>Changes to this policy</h2>
-  <p>If this policy changes, the updated version will be published at this address with a new effective date. Because the app collects nothing, changes are expected to be rare.</p>
+  <p>If this policy changes, the updated version will be published at this address with a new effective date. Because the app transmits nothing, changes are expected to be rare.</p>
 
   <h2>Contact</h2>
   <p>Questions about this policy or your data: <a href="mailto:arleybls@gmail.com">arleybls@gmail.com</a></p>
