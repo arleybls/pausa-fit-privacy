@@ -19,10 +19,26 @@
     h2 { font-size: 1.1rem; margin: 2rem 0 .5rem; }
     p, li { margin: .5rem 0; }
     .meta { opacity: .7; font-size: .9rem; margin-bottom: 2rem; }
+    .note { opacity: .7; font-size: .9rem; font-style: italic; margin: -1.5rem 0 2rem; }
     .lead { font-size: 1.05rem; font-weight: 600; }
+    .langs { display: flex; flex-wrap: wrap; gap: .25rem 1rem; font-size: .9rem; margin-bottom: 2rem; }
+    .langs a[aria-current="true"] { font-weight: 600; text-decoration: none; }
+    article + article { margin-top: 4rem; }
   </style>
 </head>
 <body>
+  <nav class="langs" aria-label="Language">
+    <a href="#en" hreflang="en" lang="en">English</a>
+    <a href="#pt" hreflang="pt-BR" lang="pt-BR">Português</a>
+    <a href="#nl" hreflang="nl" lang="nl">Nederlands</a>
+    <a href="#fr" hreflang="fr" lang="fr">Français</a>
+    <a href="#de" hreflang="de" lang="de">Deutsch</a>
+    <a href="#es" hreflang="es" lang="es">Español</a>
+    <a href="#it" hreflang="it" lang="it">Italiano</a>
+    <a href="#pl" hreflang="pl" lang="pl">Polski</a>
+  </nav>
+
+  <article id="en" lang="en">
   <h1>Privacy Policy</h1>
   <p class="meta">pausa.fit — The Fasting Companion (Android app, package <code>tech.juniorstudio.pausafit</code>)<br>
   Effective date: 20 October 2026</p>
@@ -85,5 +101,484 @@
 
   <h2>Contact</h2>
   <p>Questions about this policy or your data: <a href="mailto:arleybls@gmail.com">arleybls@gmail.com</a></p>
+  </article>
+
+  <article id="pt" lang="pt-BR">
+  <h1>Política de privacidade</h1>
+  <p class="meta">pausa.fit — The Fasting Companion (app Android, pacote <code>tech.juniorstudio.pausafit</code>)<br>
+  Data de vigência: 20 de outubro de 2026</p>
+  <p class="note">Esta é uma tradução. Em caso de divergência, prevalece a versão em inglês.</p>
+
+  <p class="lead">O Pausa armazena seus dados no seu celular e não os envia para lugar nenhum. Não há contas, nem servidores do Pausa, nem ferramentas de análise, nem serviços de terceiros no app que recebam seus dados.</p>
+
+  <h2>O que o app armazena — somente no seu aparelho</h2>
+  <ul>
+    <li>Seu histórico de jejum: horários de início e fim, metas de duração, o fuso horário em que cada jejum começou e qualquer avaliação de humor ou anotação opcional que você adicionar.</li>
+    <li>Seus ajustes: idioma, aparência, esquema de cores, estilo do anel, horário e duração do jejum, escolhas de lembretes e notificações (incluindo as horas de silêncio), se o bloqueio do app está ativado e a data em que você abriu o app pela primeira vez.</li>
+  </ul>
+  <p>Tudo isso fica em um banco de dados local e em um armazenamento local de ajustes, dentro da área privada do app no seu celular. O Pausa não envia, não sincroniza nem transmite esses dados. Histórico de jejum, avaliações de humor e anotações podem ser informações relacionadas à saúde; o Pausa os mantém apenas no seu aparelho e nunca os usa para publicidade, não os vende e não os compartilha.</p>
+
+  <h2>Perguntas de saúde na configuração inicial</h2>
+  <p>Durante a configuração, o Pausa faz algumas perguntas de saúde (gravidez ou amamentação, diabetes, histórico de transtorno alimentar, baixo peso, medicamentos e se você tem menos de 18 anos) para mostrar as orientações de segurança adequadas ou interromper a configuração quando o jejum puder ser prejudicial. Suas respostas são usadas apenas naquele momento, para escolher a próxima tela. <strong>Elas não são salvas</strong> — nem no seu aparelho, nem em nenhum outro lugar — e nunca são transmitidas.</p>
+
+  <h2>O que o app não faz</h2>
+  <ul>
+    <li>Nenhuma conta ou login de qualquer tipo.</li>
+    <li>Nenhuma transmissão dos seus dados pessoais para fora do aparelho. Seus dados ficam armazenados apenas localmente — nada é enviado, sincronizado ou compartilhado pelo app.</li>
+    <li>Nenhum SDK de análise, telemetria, relatório de falhas ou publicidade.</li>
+    <li>Nenhum serviço de terceiros recebe dados do app automaticamente. (Se você decidir compartilhar um arquivo de exportação, o app ou a pessoa com quem você o compartilhar recebe esse arquivo — veja abaixo.)</li>
+    <li>A versão publicada do Pausa não faz nenhuma requisição de rede. O app inclui a permissão <code>android.permission.INTERNET</code> porque o framework de compilação a declara por padrão; o Pausa não a usa para contatar nenhum servidor.</li>
+  </ul>
+  <p>Nos termos usados pela seção Segurança dos dados do Google Play: como nada é transmitido para fora do seu aparelho, o Pausa não coleta nem compartilha nenhum dado.</p>
+
+  <h2>Notificações</h2>
+  <p>Lembretes, notificações de fase e de meta e um aviso opcional quatro dias depois do fim do seu último jejum são todos agendados localmente no seu aparelho pelo app. Nenhum serviço de notificação fora do seu celular é envolvido. No app, você escolhe quais deles quer receber e pode definir horas de silêncio, e a tela bloqueada não mostra nada do Pausa. O ajuste "Notificações detalhadas", na seção Privacidade do app, permite escolher se as notificações mostram o seu jejum, as fases e os horários, ou se não mostram nenhum detalhe do jejum; você também pode desativar as notificações por completo nas configurações do sistema.</p>
+
+  <h2>Bloqueio do app</h2>
+  <p>Se você ativar o bloqueio do app, o Pausa pede o desbloqueio do próprio celular (impressão digital, rosto ou o PIN, padrão ou senha do celular) sempre que é iniciado, e não mostra nenhum dos seus dados até você desbloquear. Quem faz a verificação é o Android: o Pausa nunca recebe nem armazena sua impressão digital, seus dados faciais ou seu PIN, apenas a informação de que o bloqueio está ativado. Enquanto ele estiver ativado, a prévia do app na lista de apps recentes fica oculta.</p>
+
+  <h2>Exportação e importação</h2>
+  <p>Você pode exportar seus dados como um arquivo a qualquer momento. A exportação é criada no seu aparelho e só é salva ou compartilhada pelo destino que você escolher. O Pausa não recebe o arquivo exportado nem o envia para lugar nenhum por conta própria. Depois que você salva ou compartilha um arquivo com outro app, serviço ou pessoa, valem as práticas de privacidade de quem o recebe. A importação lê um arquivo que você seleciona.</p>
+
+  <h2>Backups e exclusão dos seus dados</h2>
+  <p>O Pausa não participa do backup automático do Android, então seus dados de jejum não são copiados para backups do aparelho ou na nuvem.</p>
+  <p>O app inclui a opção "Excluir todos os dados", que apaga permanentemente todos os jejuns, ajustes e lembretes que o Pausa armazena no aparelho. Desinstalar o app também remove os dados locais dele. Nenhuma das duas ações exclui arquivos de exportação que você salvou ou compartilhou em outro lugar — esses precisam ser excluídos separadamente, onde quer que você os tenha colocado.</p>
+
+  <h2>Seus direitos (UE/EEE, Reino Unido, Brasil e leis semelhantes)</h2>
+  <p>Como seus dados nunca saem do seu aparelho, você exerce seus direitos diretamente no app: você pode ver seus dados (acesso), corrigir os horários de um jejum e alterar ou apagar o humor registrado (retificação), exportar uma cópia (portabilidade) e apagar tudo com "Excluir todos os dados" ou desinstalando o app (eliminação). Não existe cópia em servidor para solicitar ou corrigir.</p>
+  <ul>
+    <li><strong>Controlador:</strong> o desenvolvedor individual que publica o Pausa no Google Play; contato abaixo.</li>
+    <li><strong>Base legal:</strong> seu histórico de jejum e seus ajustes são tratados no seu aparelho para prestar o serviço que você pediu (RGPD, art. 6(1)(b)). Os registros relacionados à saúde que você escolhe adicionar — avaliações de humor, anotações — são tratados apenas porque você os insere, com o seu consentimento (RGPD, art. 9(2)(a)); você pode retirá-lo a qualquer momento apagando o humor ou excluindo o jejum.</li>
+    <li><strong>Retenção:</strong> os dados ficam no seu aparelho até você excluí-los ou desinstalar o app. Nada é retido em nenhum outro lugar.</li>
+    <li><strong>Transferências internacionais:</strong> nenhuma — nenhum dado é transferido para fora do seu aparelho.</li>
+    <li><strong>Reclamações:</strong> você pode apresentar uma reclamação à autoridade de proteção de dados do seu país (na UE/EEE, a autoridade de controle nacional; no Brasil, a ANPD).</li>
+  </ul>
+
+  <h2>Links externos</h2>
+  <p>O app contém um link para a versão on-line desta política. Tocar nele abre o seu navegador — a requisição é feita pelo navegador, não pelo Pausa.</p>
+
+  <h2>Crianças</h2>
+  <p>O Pausa foi feito para adultos e não se destina a menores de 18 anos.</p>
+
+  <h2>Alterações nesta política</h2>
+  <p>Se esta política mudar, a versão atualizada será publicada neste endereço com uma nova data de vigência. Como o app não transmite nada, espera-se que as alterações sejam raras.</p>
+
+  <h2>Contato</h2>
+  <p>Dúvidas sobre esta política ou sobre seus dados: <a href="mailto:arleybls@gmail.com">arleybls@gmail.com</a></p>
+  </article>
+
+  <article id="nl" lang="nl">
+  <h1>Privacybeleid</h1>
+  <p class="meta">pausa.fit — The Fasting Companion (Android-app, pakket <code>tech.juniorstudio.pausafit</code>)<br>
+  Ingangsdatum: 20 oktober 2026</p>
+  <p class="note">Dit is een vertaling. Bij verschillen geldt de Engelse versie.</p>
+
+  <p class="lead">Pausa bewaart je gegevens op je telefoon en stuurt ze nergens naartoe. Er zijn geen accounts, geen servers van Pausa, geen analytics en geen diensten van derden in de app die je gegevens ontvangen.</p>
+
+  <h2>Wat de app bewaart — alleen op je apparaat</h2>
+  <ul>
+    <li>Je vastengeschiedenis: begin- en eindtijden, doelduur, de tijdzone waarin een vasten begon en een eventuele stemming of notitie die je toevoegt.</li>
+    <li>Je instellingen: taal, weergave, kleurenschema, ringstijl, vastenschema en vastenduur, keuzes voor herinneringen en meldingen (inclusief stille uren), of de app-vergrendeling aanstaat en de datum waarop je de app voor het eerst opende.</li>
+  </ul>
+  <p>Dit alles staat in een lokale database en lokale opslag voor instellingen, in het afgeschermde deel van de app op je telefoon. Pausa uploadt, synchroniseert of verstuurt het niet. Vastengeschiedenis, stemmingen en notities kunnen gezondheidsgegevens zijn; Pausa houdt ze alleen op je apparaat en gebruikt ze nooit voor advertenties, verkoopt ze niet en deelt ze niet.</p>
+
+  <h2>Gezondheidsvragen bij het instellen</h2>
+  <p>Tijdens het instellen stelt Pausa een paar gezondheidsvragen (zwangerschap of borstvoeding, diabetes, een eetstoornis in het verleden, ondergewicht, medicijnen en of je jonger bent dan 18) zodat de app de juiste veiligheidsinformatie kan tonen of het instellen kan stoppen waar vasten schadelijk kan zijn. Je antwoorden worden alleen op dat moment gebruikt, om het volgende scherm te kiezen. <strong>Ze worden niet opgeslagen</strong> — niet op je apparaat en nergens anders — en ze worden nooit verstuurd.</p>
+
+  <h2>Wat de app niet doet</h2>
+  <ul>
+    <li>Geen account of inloggen, van welke soort ook.</li>
+    <li>Geen verzending van je persoonsgegevens buiten het apparaat. Je gegevens worden alleen lokaal bewaard — de app uploadt, synchroniseert of deelt niets.</li>
+    <li>Geen SDK's voor analytics, telemetrie, crashrapporten of advertenties.</li>
+    <li>Geen enkele dienst van derden ontvangt automatisch gegevens van de app. (Als je ervoor kiest een exportbestand te delen, ontvangt de app of persoon waarmee je het deelt dat bestand — zie hieronder.)</li>
+    <li>De uitgebrachte versie van Pausa doet geen netwerkverzoeken. De app bevat de machtiging <code>android.permission.INTERNET</code> omdat het build-framework die standaard declareert; Pausa gebruikt die niet om contact te maken met een server.</li>
+  </ul>
+  <p>In de termen van de sectie Gegevensveiligheid van Google Play: omdat er niets buiten je apparaat wordt verstuurd, verzamelt Pausa geen gegevens en deelt Pausa geen gegevens.</p>
+
+  <h2>Meldingen</h2>
+  <p>Herinneringen, meldingen over fases en je doel, en een optioneel duwtje vier dagen nadat je laatste vasten is geëindigd, worden allemaal door de app lokaal op je apparaat ingepland. Er is geen meldingsdienst buiten je telefoon bij betrokken. In de app kies je welke je krijgt en kun je stille uren instellen, en een vergrendeld scherm toont niets van Pausa. Met de instelling "Gedetailleerde meldingen" in het onderdeel Privacy van de app kies je of meldingen je vasten, fases en tijden noemen, of geen details over het vasten tonen; je kunt meldingen ook helemaal uitzetten in je systeeminstellingen.</p>
+
+  <h2>App-vergrendeling</h2>
+  <p>Als je de app-vergrendeling aanzet, vraagt Pausa bij elke start om de ontgrendeling van je telefoon zelf (vingerafdruk, gezicht, of de pincode, het patroon of het wachtwoord van je telefoon) en toont geen van je gegevens tot je ontgrendelt. Android doet de controle: Pausa ontvangt of bewaart nooit je vingerafdruk, gezichtsgegevens of pincode, alleen het feit dat de vergrendeling aanstaat. Zolang die aanstaat, is het voorbeeld van de app bij recente apps verborgen.</p>
+
+  <h2>Exporteren en importeren</h2>
+  <p>Je kunt je gegevens op elk moment als bestand exporteren. De export wordt op je apparaat gemaakt en alleen opgeslagen of gedeeld via de bestemming die jij kiest. Pausa ontvangt het geëxporteerde bestand niet en stuurt het nergens uit zichzelf naartoe. Zodra je een bestand opslaat of deelt met een andere app, dienst of persoon, geldt het privacybeleid van die ontvanger. Bij importeren wordt een bestand gelezen dat jij kiest.</p>
+
+  <h2>Back-ups en je gegevens wissen</h2>
+  <p>Pausa doet niet mee aan de automatische apparaatback-up van Android, dus je vastengegevens worden niet gekopieerd naar back-ups op het apparaat of in de cloud.</p>
+  <p>De app heeft een optie "Alle gegevens wissen" die permanent elk vasten, elke instelling en elke herinnering verwijdert die Pausa op het apparaat bewaart. Ook het verwijderen van de app wist de lokale gegevens. Geen van beide verwijdert exportbestanden die je eerder ergens anders hebt opgeslagen of gedeeld — die moet je apart verwijderen, waar je ze ook hebt neergezet.</p>
+
+  <h2>Je rechten (EU/EER, VK, Brazilië en vergelijkbare wetten)</h2>
+  <p>Omdat je gegevens je apparaat nooit verlaten, oefen je je rechten rechtstreeks in de app uit: je kunt je gegevens bekijken (inzage), de tijden van een vasten corrigeren en de stemming wijzigen of wissen (rectificatie), een kopie exporteren (overdraagbaarheid) en alles wissen met "Alle gegevens wissen" of door de app te verwijderen (wissing). Er is geen kopie op een server om op te vragen of te corrigeren.</p>
+  <ul>
+    <li><strong>Verwerkingsverantwoordelijke:</strong> de individuele ontwikkelaar die Pausa op Google Play publiceert; contactgegevens hieronder.</li>
+    <li><strong>Rechtsgrond:</strong> je vastengeschiedenis en instellingen worden op je apparaat verwerkt om de dienst te leveren waar je om hebt gevraagd (AVG, art. 6 lid 1 onder b). Gezondheidsgegevens die je zelf toevoegt — stemmingen, notities — worden alleen verwerkt omdat je ze invoert, met je toestemming (AVG, art. 9 lid 2 onder a); je kunt die toestemming op elk moment intrekken door een stemming te wissen of het vasten te verwijderen.</li>
+    <li><strong>Bewaartermijn:</strong> gegevens blijven op je apparaat tot je ze wist of de app verwijdert. Nergens anders wordt iets bewaard.</li>
+    <li><strong>Internationale doorgifte:</strong> geen — er worden geen gegevens buiten je apparaat doorgegeven.</li>
+    <li><strong>Klachten:</strong> je kunt een klacht indienen bij je lokale toezichthouder voor gegevensbescherming (in de EU/EER je nationale toezichthoudende autoriteit; in Brazilië de ANPD).</li>
+  </ul>
+
+  <h2>Externe links</h2>
+  <p>De app bevat een link naar de online versie van dit beleid. Als je erop tikt, opent je browser — het verzoek wordt gedaan door je browser, niet door Pausa.</p>
+
+  <h2>Kinderen</h2>
+  <p>Pausa is gemaakt voor volwassenen en niet bedoeld voor iemand jonger dan 18.</p>
+
+  <h2>Wijzigingen in dit beleid</h2>
+  <p>Als dit beleid verandert, wordt de bijgewerkte versie op dit adres gepubliceerd met een nieuwe ingangsdatum. Omdat de app niets verstuurt, zullen wijzigingen naar verwachting zelden voorkomen.</p>
+
+  <h2>Contact</h2>
+  <p>Vragen over dit beleid of je gegevens: <a href="mailto:arleybls@gmail.com">arleybls@gmail.com</a></p>
+  </article>
+
+  <article id="fr" lang="fr">
+  <h1>Politique de confidentialité</h1>
+  <p class="meta">pausa.fit — The Fasting Companion (application Android, paquet <code>tech.juniorstudio.pausafit</code>)<br>
+  Date d'entrée en vigueur : 20 octobre 2026</p>
+  <p class="note">Ceci est une traduction. En cas de divergence, la version anglaise fait foi.</p>
+
+  <p class="lead">Pausa stocke vos données sur votre téléphone et ne les envoie nulle part. Il n'y a ni compte, ni serveur Pausa, ni outil d'analyse, ni service tiers dans l'application qui reçoive vos données.</p>
+
+  <h2>Ce que l'application stocke — uniquement sur votre appareil</h2>
+  <ul>
+    <li>Votre historique de jeûne : heures de début et de fin, durées visées, le fuseau horaire dans lequel un jeûne a commencé, et toute humeur ou note facultative que vous ajoutez.</li>
+    <li>Vos réglages : langue, apparence, palette de couleurs, style d'anneau, programme et durée de jeûne, choix de rappels et de notifications (y compris les heures calmes), l'activation ou non du verrouillage de l'application, et la date à laquelle vous avez ouvert l'application pour la première fois.</li>
+  </ul>
+  <p>Tout cela se trouve dans une base de données locale et un stockage local des réglages, dans l'espace privé de l'application sur votre téléphone. Pausa ne les téléverse pas, ne les synchronise pas et ne les transmet pas. L'historique de jeûne, les humeurs et les notes peuvent constituer des informations liées à la santé ; Pausa les conserve uniquement sur votre appareil et ne les utilise jamais à des fins publicitaires, ne les vend pas et ne les partage pas.</p>
+
+  <h2>Questions de santé lors de la configuration</h2>
+  <p>Lors de la configuration, Pausa vous pose quelques questions de santé (grossesse ou allaitement, diabète, antécédents de troubles alimentaires, insuffisance pondérale, médicaments, et si vous avez moins de 18 ans) afin d'afficher les conseils de sécurité adaptés ou d'interrompre la configuration lorsque le jeûne pourrait être nocif. Vos réponses ne servent qu'à ce moment-là, pour choisir l'écran suivant. <strong>Elles ne sont pas enregistrées</strong> — ni sur votre appareil, ni ailleurs — et ne sont jamais transmises.</p>
+
+  <h2>Ce que l'application ne fait pas</h2>
+  <ul>
+    <li>Aucun compte ni aucune connexion, de quelque sorte que ce soit.</li>
+    <li>Aucune transmission de vos données personnelles hors de l'appareil. Vos données sont stockées uniquement en local — l'application ne téléverse, ne synchronise et ne partage rien.</li>
+    <li>Aucun SDK d'analyse, de télémétrie, de rapport de plantage ou de publicité.</li>
+    <li>Aucun service tiers ne reçoit automatiquement de données de l'application. (Si vous choisissez de partager un fichier d'export, l'application ou la personne avec qui vous le partagez reçoit ce fichier — voir ci-dessous.)</li>
+    <li>La version publiée de Pausa n'effectue aucune requête réseau. L'application inclut l'autorisation <code>android.permission.INTERNET</code> parce que le framework de compilation la déclare par défaut ; Pausa ne l'utilise pour contacter aucun serveur.</li>
+  </ul>
+  <p>Dans les termes de la section Sécurité des données de Google Play : comme rien n'est transmis hors de votre appareil, Pausa ne collecte aucune donnée et ne partage aucune donnée.</p>
+
+  <h2>Notifications</h2>
+  <p>Les rappels, les notifications de phase et d'objectif, ainsi qu'un petit rappel facultatif quatre jours après la fin de votre dernier jeûne, sont tous programmés localement sur votre appareil par l'application. Aucun service de notification extérieur à votre téléphone n'intervient. Dans l'application, vous choisissez lesquels vous recevez et pouvez définir des heures calmes, et un écran verrouillé n'affiche rien de Pausa. Le réglage « Notifications détaillées », dans la section Confidentialité de l'application, vous permet de choisir si les notifications mentionnent votre jeûne, les phases et les heures, ou n'affichent aucun détail sur le jeûne ; vous pouvez aussi désactiver complètement les notifications dans les réglages du système.</p>
+
+  <h2>Verrouillage de l'application</h2>
+  <p>Si vous activez le verrouillage de l'application, Pausa demande le déverrouillage propre à votre téléphone (empreinte digitale, visage, ou le code PIN, le schéma ou le mot de passe du téléphone) à chaque démarrage, et n'affiche aucune de vos données tant que vous n'avez pas déverrouillé. C'est Android qui effectue la vérification : Pausa ne reçoit ni ne stocke jamais votre empreinte digitale, vos données faciales ou votre code PIN, seulement le fait que le verrouillage est activé. Tant qu'il est activé, l'aperçu de l'application dans les applications récentes est masqué.</p>
+
+  <h2>Exportation et importation</h2>
+  <p>Vous pouvez exporter vos données sous forme de fichier à tout moment. L'export est créé sur votre appareil et n'est enregistré ou partagé que via la destination que vous choisissez. Pausa ne reçoit pas le fichier exporté et ne l'envoie nulle part de lui-même. Dès que vous enregistrez ou partagez un fichier avec une autre application, un autre service ou une autre personne, ce sont les pratiques de confidentialité de ce destinataire qui s'appliquent. L'importation lit un fichier que vous sélectionnez.</p>
+
+  <h2>Sauvegardes et suppression de vos données</h2>
+  <p>Pausa ne participe pas à la sauvegarde automatique d'Android : vos données de jeûne ne sont donc pas copiées dans les sauvegardes de l'appareil ou du cloud.</p>
+  <p>L'application propose une option « Supprimer toutes les données » qui efface définitivement chaque jeûne, réglage et rappel enregistré par Pausa sur l'appareil. La désinstallation de l'application supprime également ses données locales. Aucune de ces deux actions ne supprime les fichiers d'export que vous avez enregistrés ou partagés ailleurs — ceux-ci doivent être supprimés séparément, là où vous les avez placés.</p>
+
+  <h2>Vos droits (UE/EEE, Royaume-Uni, Brésil et lois similaires)</h2>
+  <p>Comme vos données ne quittent jamais votre appareil, vous exercez vos droits directement dans l'application : vous pouvez consulter vos données (accès), corriger les heures d'un jeûne et modifier ou effacer son humeur (rectification), en exporter une copie (portabilité), et tout effacer avec « Supprimer toutes les données » ou en désinstallant l'application (effacement). Il n'existe aucune copie sur un serveur à demander ou à corriger.</p>
+  <ul>
+    <li><strong>Responsable du traitement :</strong> le développeur individuel qui publie Pausa sur Google Play ; coordonnées ci-dessous.</li>
+    <li><strong>Base légale :</strong> votre historique de jeûne et vos réglages sont traités sur votre appareil pour fournir le service que vous avez demandé (RGPD, art. 6, paragraphe 1, point b). Les données liées à la santé que vous choisissez d'ajouter — humeurs, notes — ne sont traitées que parce que vous les saisissez, avec votre consentement (RGPD, art. 9, paragraphe 2, point a) ; vous pouvez le retirer à tout moment en effaçant une humeur ou en supprimant le jeûne.</li>
+    <li><strong>Conservation :</strong> les données restent sur votre appareil jusqu'à ce que vous les supprimiez ou que vous désinstalliez l'application. Rien n'est conservé ailleurs.</li>
+    <li><strong>Transferts internationaux :</strong> aucun — aucune donnée n'est transférée hors de votre appareil.</li>
+    <li><strong>Réclamations :</strong> vous pouvez introduire une réclamation auprès de votre autorité locale de protection des données (dans l'UE/EEE, votre autorité de contrôle nationale ; au Brésil, l'ANPD).</li>
+  </ul>
+
+  <h2>Liens externes</h2>
+  <p>L'application contient un lien vers la version en ligne de cette politique. Appuyer dessus ouvre votre navigateur — la requête est effectuée par votre navigateur, pas par Pausa.</p>
+
+  <h2>Enfants</h2>
+  <p>Pausa est conçu pour les adultes et ne s'adresse pas aux personnes de moins de 18 ans.</p>
+
+  <h2>Modifications de cette politique</h2>
+  <p>Si cette politique change, la version mise à jour sera publiée à cette adresse avec une nouvelle date d'entrée en vigueur. Comme l'application ne transmet rien, les modifications devraient être rares.</p>
+
+  <h2>Contact</h2>
+  <p>Questions sur cette politique ou sur vos données : <a href="mailto:arleybls@gmail.com">arleybls@gmail.com</a></p>
+  </article>
+
+  <article id="de" lang="de">
+  <h1>Datenschutzerklärung</h1>
+  <p class="meta">pausa.fit — The Fasting Companion (Android-App, Paket <code>tech.juniorstudio.pausafit</code>)<br>
+  Gültig ab: 20. Oktober 2026</p>
+  <p class="note">Dies ist eine Übersetzung. Bei Abweichungen gilt die englische Fassung.</p>
+
+  <p class="lead">Pausa speichert deine Daten auf deinem Handy und sendet sie nirgendwohin. Es gibt keine Konten, keine Pausa-Server, keine Analyse-Tools und keine Drittanbieterdienste in der App, die deine Daten erhalten.</p>
+
+  <h2>Was die App speichert — nur auf deinem Gerät</h2>
+  <ul>
+    <li>Dein Fastenverlauf: Start- und Endzeiten, Zieldauern, die Zeitzone, in der ein Fasten begann, und jede optionale Stimmungsangabe oder Notiz, die du hinzufügst.</li>
+    <li>Deine Einstellungen: Sprache, Darstellung, Farbschema, Ring-Stil, Fastenplan und Fastendauer, Auswahl für Erinnerungen und Benachrichtigungen (einschließlich Ruhezeit), ob die App-Sperre aktiv ist, und das Datum, an dem du die App zum ersten Mal geöffnet hast.</li>
+  </ul>
+  <p>All das liegt in einer lokalen Datenbank und einem lokalen Einstellungsspeicher im privaten Bereich der App auf deinem Handy. Pausa lädt es nicht hoch, synchronisiert es nicht und überträgt es nicht. Fastenverlauf, Stimmungsangaben und Notizen können gesundheitsbezogene Informationen sein; Pausa behält sie nur auf deinem Gerät und nutzt sie nie für Werbung, verkauft sie nicht und gibt sie nicht weiter.</p>
+
+  <h2>Gesundheitsfragen bei der Einrichtung</h2>
+  <p>Bei der Einrichtung stellt Pausa ein paar Gesundheitsfragen (Schwangerschaft oder Stillzeit, Diabetes, eine Essstörung in der Vorgeschichte, Untergewicht, Medikamente und ob du jünger als 18 bist), um die passenden Sicherheitshinweise zu zeigen oder die Einrichtung zu beenden, wo Fasten schaden könnte. Deine Antworten werden nur in diesem Moment verwendet, um den nächsten Bildschirm auszuwählen. <strong>Sie werden nicht gespeichert</strong> — weder auf deinem Gerät noch anderswo — und nie übertragen.</p>
+
+  <h2>Was die App nicht tut</h2>
+  <ul>
+    <li>Kein Konto und keine Anmeldung jeglicher Art.</li>
+    <li>Keine Übertragung deiner personenbezogenen Daten vom Gerät. Deine Daten werden nur lokal gespeichert — die App lädt nichts hoch, synchronisiert nichts und teilt nichts.</li>
+    <li>Keine SDKs für Analyse, Telemetrie, Absturzberichte oder Werbung.</li>
+    <li>Kein Drittanbieterdienst erhält automatisch Daten von der App. (Wenn du eine Exportdatei teilst, erhält die App oder Person, mit der du sie teilst, diese Datei — siehe unten.)</li>
+    <li>Die veröffentlichte Version von Pausa stellt keine Netzwerkanfragen. Die App enthält die Berechtigung <code>android.permission.INTERNET</code>, weil das Build-Framework sie standardmäßig deklariert; Pausa nutzt sie nicht, um einen Server zu kontaktieren.</li>
+  </ul>
+  <p>In den Begriffen des Abschnitts „Datensicherheit“ bei Google Play: Da nichts von deinem Gerät übertragen wird, erhebt Pausa keine Daten und gibt keine Daten weiter.</p>
+
+  <h2>Benachrichtigungen</h2>
+  <p>Erinnerungen, Benachrichtigungen zu Phasen und zum Ziel sowie ein optionaler Anstoß vier Tage nach dem Ende deines letzten Fastens werden alle von der App lokal auf deinem Gerät geplant. Kein Benachrichtigungsdienst außerhalb deines Handys ist beteiligt. In der App wählst du, welche davon du bekommst, und kannst eine Ruhezeit festlegen, und ein gesperrter Bildschirm zeigt nichts von Pausa. Mit der Einstellung „Detaillierte Benachrichtigungen“ im Bereich „Privatsphäre“ der App wählst du, ob Benachrichtigungen dein Fasten, Phasen und Uhrzeiten nennen oder keine Details zum Fasten zeigen; du kannst Benachrichtigungen auch ganz in deinen Systemeinstellungen ausschalten.</p>
+
+  <h2>App-Sperre</h2>
+  <p>Wenn du die App-Sperre einschaltest, verlangt Pausa bei jedem Start die eigene Entsperrung deines Handys (Fingerabdruck, Gesicht oder die PIN, das Muster oder das Passwort des Handys) und zeigt keine deiner Daten, bis du entsperrst. Die Prüfung übernimmt Android: Pausa erhält oder speichert nie deinen Fingerabdruck, deine Gesichtsdaten oder deine PIN, nur die Information, dass die Sperre aktiv ist. Solange sie aktiv ist, ist die Vorschau der App in den zuletzt verwendeten Apps ausgeblendet.</p>
+
+  <h2>Export und Import</h2>
+  <p>Du kannst deine Daten jederzeit als Datei exportieren. Der Export wird auf deinem Gerät erstellt und nur über das Ziel gespeichert oder geteilt, das du auswählst. Pausa erhält die exportierte Datei nicht und sendet sie nicht von sich aus irgendwohin. Sobald du eine Datei mit einer anderen App, einem Dienst oder einer Person speicherst oder teilst, gelten die Datenschutzpraktiken dieses Empfängers. Beim Import wird eine Datei gelesen, die du auswählst.</p>
+
+  <h2>Backups und das Löschen deiner Daten</h2>
+  <p>Pausa nimmt nicht an der automatischen Gerätesicherung von Android teil, daher werden deine Fastendaten nicht in Geräte- oder Cloud-Backups kopiert.</p>
+  <p>Die App bietet die Option „Alle Daten löschen“, die jedes Fasten, jede Einstellung und jede Erinnerung, die Pausa auf dem Gerät gespeichert hat, dauerhaft löscht. Auch das Deinstallieren der App entfernt ihre lokalen Daten. Keine der beiden Aktionen löscht Exportdateien, die du zuvor anderswo gespeichert oder geteilt hast — diese musst du separat löschen, wo auch immer du sie abgelegt hast.</p>
+
+  <h2>Deine Rechte (EU/EWR, Vereinigtes Königreich, Brasilien und ähnliche Gesetze)</h2>
+  <p>Da deine Daten dein Gerät nie verlassen, übst du deine Rechte direkt in der App aus: Du kannst deine Daten ansehen (Auskunft), die Zeiten eines Fastens korrigieren und seine Stimmung ändern oder löschen (Berichtigung), eine Kopie exportieren (Datenübertragbarkeit) und alles mit „Alle Daten löschen“ oder durch Deinstallieren löschen (Löschung). Es gibt keine Kopie auf einem Server, die du anfordern oder berichtigen könntest.</p>
+  <ul>
+    <li><strong>Verantwortlicher:</strong> der einzelne Entwickler, der Pausa bei Google Play veröffentlicht; Kontakt unten.</li>
+    <li><strong>Rechtsgrundlage:</strong> Dein Fastenverlauf und deine Einstellungen werden auf deinem Gerät verarbeitet, um den von dir gewünschten Dienst bereitzustellen (Art. 6 Abs. 1 lit. b DSGVO). Gesundheitsbezogene Einträge, die du selbst hinzufügst — Stimmungsangaben, Notizen —, werden nur verarbeitet, weil du sie eingibst, mit deiner Einwilligung (Art. 9 Abs. 2 lit. a DSGVO); du kannst sie jederzeit widerrufen, indem du eine Stimmung entfernst oder das Fasten löschst.</li>
+    <li><strong>Speicherdauer:</strong> Die Daten bleiben auf deinem Gerät, bis du sie löschst oder die App deinstallierst. Nirgendwo sonst wird etwas aufbewahrt.</li>
+    <li><strong>Internationale Übermittlungen:</strong> keine — es werden keine Daten von deinem Gerät übermittelt.</li>
+    <li><strong>Beschwerden:</strong> Du kannst dich bei deiner zuständigen Datenschutzaufsichtsbehörde beschweren (in der EU/im EWR bei deiner nationalen Aufsichtsbehörde; in Brasilien bei der ANPD).</li>
+  </ul>
+
+  <h2>Externe Links</h2>
+  <p>Die App enthält einen Link zur Online-Version dieser Datenschutzerklärung. Wenn du darauf tippst, öffnet sich dein Browser — die Anfrage stellt dein Browser, nicht Pausa.</p>
+
+  <h2>Kinder</h2>
+  <p>Pausa ist für Erwachsene gedacht und nicht für Personen unter 18 Jahren bestimmt.</p>
+
+  <h2>Änderungen dieser Datenschutzerklärung</h2>
+  <p>Wenn sich diese Datenschutzerklärung ändert, wird die aktualisierte Fassung unter dieser Adresse mit neuem Gültigkeitsdatum veröffentlicht. Da die App nichts überträgt, sind Änderungen voraussichtlich selten.</p>
+
+  <h2>Kontakt</h2>
+  <p>Fragen zu dieser Datenschutzerklärung oder zu deinen Daten: <a href="mailto:arleybls@gmail.com">arleybls@gmail.com</a></p>
+  </article>
+
+  <article id="es" lang="es">
+  <h1>Política de privacidad</h1>
+  <p class="meta">pausa.fit — The Fasting Companion (app Android, paquete <code>tech.juniorstudio.pausafit</code>)<br>
+  Fecha de entrada en vigor: 20 de octubre de 2026</p>
+  <p class="note">Esta es una traducción. En caso de discrepancia, prevalece la versión en inglés.</p>
+
+  <p class="lead">Pausa guarda tus datos en tu teléfono y no los envía a ningún sitio. No hay cuentas, ni servidores de Pausa, ni analíticas, ni servicios de terceros en la app que reciban tus datos.</p>
+
+  <h2>Qué guarda la app — solo en tu dispositivo</h2>
+  <ul>
+    <li>Tu historial de ayunos: horas de inicio y fin, duraciones objetivo, la zona horaria en la que empezó cada ayuno y cualquier valoración de ánimo o nota opcional que añadas.</li>
+    <li>Tus ajustes: idioma, apariencia, esquema de colores, estilo del anillo, horario y duración del ayuno, preferencias de recordatorios y notificaciones (incluidas las horas de silencio), si el bloqueo de la app está activado y la fecha en que abriste la app por primera vez.</li>
+  </ul>
+  <p>Todo esto se guarda en una base de datos local y en un almacenamiento local de ajustes, dentro del área privada de la app en tu teléfono. Pausa no lo sube, no lo sincroniza ni lo transmite. El historial de ayunos, las valoraciones de ánimo y las notas pueden ser información relacionada con la salud; Pausa los conserva solo en tu dispositivo y nunca los usa para publicidad, no los vende ni los comparte.</p>
+
+  <h2>Preguntas de salud durante la configuración</h2>
+  <p>Durante la configuración, Pausa te hace algunas preguntas de salud (embarazo o lactancia, diabetes, antecedentes de trastornos de la conducta alimentaria, bajo peso, medicación y si tienes menos de 18 años) para mostrarte las indicaciones de seguridad adecuadas o detener la configuración cuando el ayuno pudiera ser perjudicial. Tus respuestas solo se usan en ese momento, para elegir la siguiente pantalla. <strong>No se guardan</strong> —ni en tu dispositivo ni en ningún otro sitio— y nunca se transmiten.</p>
+
+  <h2>Qué no hace la app</h2>
+  <ul>
+    <li>Ninguna cuenta ni inicio de sesión de ningún tipo.</li>
+    <li>Ninguna transmisión de tus datos personales fuera del dispositivo. Tus datos solo se guardan localmente: la app no sube, sincroniza ni comparte nada.</li>
+    <li>Ningún SDK de analítica, telemetría, informes de fallos o publicidad.</li>
+    <li>Ningún servicio de terceros recibe datos de la app automáticamente. (Si decides compartir un archivo de exportación, la app o la persona con quien lo compartas recibe ese archivo; consulta más abajo).</li>
+    <li>La versión publicada de Pausa no hace ninguna petición de red. La app incluye el permiso <code>android.permission.INTERNET</code> porque el framework de compilación lo declara por defecto; Pausa no lo usa para contactar con ningún servidor.</li>
+  </ul>
+  <p>En los términos de la sección Seguridad de los datos de Google Play: como nada se transmite fuera de tu dispositivo, Pausa no recoge ni comparte ningún dato.</p>
+
+  <h2>Notificaciones</h2>
+  <p>Los recordatorios, las notificaciones de fase y de objetivo y un aviso opcional cuatro días después de que termine tu último ayuno los programa todos la app localmente en tu dispositivo. No interviene ningún servicio de notificaciones fuera de tu teléfono. En la app eliges cuáles recibes y puedes fijar horas de silencio, y una pantalla bloqueada no muestra nada de Pausa. El ajuste «Notificaciones detalladas», en la sección Privacidad de la app, te permite elegir si las notificaciones mencionan tu ayuno, las fases y las horas, o no muestran ningún detalle del ayuno; también puedes desactivar las notificaciones por completo en los ajustes del sistema.</p>
+
+  <h2>Bloqueo de la app</h2>
+  <p>Si activas el bloqueo de la app, Pausa te pide el desbloqueo propio de tu teléfono (huella dactilar, rostro, o el PIN, patrón o contraseña del teléfono) cada vez que se inicia, y no muestra ninguno de tus datos hasta que desbloquees. La comprobación la hace Android: Pausa nunca recibe ni guarda tu huella, tus datos faciales ni tu PIN, solo el hecho de que el bloqueo está activado. Mientras está activado, la vista previa de la app en las apps recientes está oculta.</p>
+
+  <h2>Exportar e importar</h2>
+  <p>Puedes exportar tus datos como archivo en cualquier momento. La exportación se crea en tu dispositivo y solo se guarda o se comparte a través del destino que elijas. Pausa no recibe el archivo exportado ni lo envía a ningún sitio por su cuenta. En cuanto guardas o compartes un archivo con otra app, servicio o persona, se aplican las prácticas de privacidad de ese destinatario. Al importar se lee un archivo que tú seleccionas.</p>
+
+  <h2>Copias de seguridad y borrado de tus datos</h2>
+  <p>Pausa no participa en la copia de seguridad automática de Android, así que tus datos de ayuno no se copian en las copias de seguridad del dispositivo ni en la nube.</p>
+  <p>La app incluye la opción «Borrar todos los datos», que elimina de forma permanente todos los ayunos, ajustes y recordatorios que Pausa guarda en el dispositivo. Desinstalar la app también elimina sus datos locales. Ninguna de las dos acciones borra los archivos de exportación que hayas guardado o compartido en otro lugar; esos tienes que borrarlos por separado, dondequiera que los pusieras.</p>
+
+  <h2>Tus derechos (UE/EEE, Reino Unido, Brasil y leyes similares)</h2>
+  <p>Como tus datos nunca salen de tu dispositivo, ejerces tus derechos directamente en la app: puedes ver tus datos (acceso), corregir las horas de un ayuno y cambiar o borrar su estado de ánimo (rectificación), exportar una copia (portabilidad) y borrarlo todo con «Borrar todos los datos» o desinstalando la app (supresión). No existe ninguna copia en un servidor que solicitar o corregir.</p>
+  <ul>
+    <li><strong>Responsable del tratamiento:</strong> el desarrollador individual que publica Pausa en Google Play; contacto más abajo.</li>
+    <li><strong>Base jurídica:</strong> tu historial de ayunos y tus ajustes se tratan en tu dispositivo para prestarte el servicio que has pedido (art. 6.1.b) del RGPD). Las entradas relacionadas con la salud que decides añadir —valoraciones de ánimo, notas— solo se tratan porque tú las introduces, con tu consentimiento (art. 9.2.a) del RGPD); puedes retirarlo en cualquier momento borrando un estado de ánimo o eliminando el ayuno.</li>
+    <li><strong>Conservación:</strong> los datos permanecen en tu dispositivo hasta que los borres o desinstales la app. No se conserva nada en ningún otro lugar.</li>
+    <li><strong>Transferencias internacionales:</strong> ninguna; no se transfiere ningún dato fuera de tu dispositivo.</li>
+    <li><strong>Reclamaciones:</strong> puedes presentar una reclamación ante tu autoridad local de protección de datos (en la UE/EEE, tu autoridad de control nacional; en Brasil, la ANPD).</li>
+  </ul>
+
+  <h2>Enlaces externos</h2>
+  <p>La app contiene un enlace a la versión en línea de esta política. Al tocarlo se abre tu navegador: la solicitud la hace tu navegador, no Pausa.</p>
+
+  <h2>Menores</h2>
+  <p>Pausa está pensada para adultos y no está dirigida a menores de 18 años.</p>
+
+  <h2>Cambios en esta política</h2>
+  <p>Si esta política cambia, la versión actualizada se publicará en esta dirección con una nueva fecha de entrada en vigor. Como la app no transmite nada, se espera que los cambios sean poco frecuentes.</p>
+
+  <h2>Contacto</h2>
+  <p>Preguntas sobre esta política o tus datos: <a href="mailto:arleybls@gmail.com">arleybls@gmail.com</a></p>
+  </article>
+
+  <article id="it" lang="it">
+  <h1>Informativa sulla privacy</h1>
+  <p class="meta">pausa.fit — The Fasting Companion (app Android, pacchetto <code>tech.juniorstudio.pausafit</code>)<br>
+  Data di entrata in vigore: 20 ottobre 2026</p>
+  <p class="note">Questa è una traduzione. In caso di discrepanza, prevale la versione inglese.</p>
+
+  <p class="lead">Pausa conserva i tuoi dati sul telefono e non li invia da nessuna parte. Non ci sono account, server di Pausa, strumenti di analisi o servizi di terze parti nell'app che ricevano i tuoi dati.</p>
+
+  <h2>Cosa conserva l'app — solo sul tuo dispositivo</h2>
+  <ul>
+    <li>La tua cronologia dei digiuni: orari di inizio e fine, durate obiettivo, il fuso orario in cui è iniziato un digiuno ed eventuali valutazioni dell'umore o note facoltative che aggiungi.</li>
+    <li>Le tue impostazioni: lingua, aspetto, schema di colori, stile dell'anello, programma e durata del digiuno, scelte su promemoria e notifiche (comprese le ore di silenzio), se il blocco dell'app è attivo e la data in cui hai aperto l'app per la prima volta.</li>
+  </ul>
+  <p>Tutto questo si trova in un database locale e in un archivio locale delle impostazioni, nell'area privata dell'app sul tuo telefono. Pausa non lo carica, non lo sincronizza e non lo trasmette. La cronologia dei digiuni, le valutazioni dell'umore e le note possono essere informazioni relative alla salute; Pausa le conserva solo sul tuo dispositivo e non le usa mai per la pubblicità, non le vende e non le condivide.</p>
+
+  <h2>Domande sulla salute durante la configurazione</h2>
+  <p>Durante la configurazione, Pausa ti fa alcune domande sulla salute (gravidanza o allattamento, diabete, precedenti di disturbi alimentari, sottopeso, farmaci e se hai meno di 18 anni) per mostrarti le indicazioni di sicurezza giuste o interrompere la configurazione quando il digiuno potrebbe essere dannoso. Le tue risposte vengono usate solo in quel momento, per scegliere la schermata successiva. <strong>Non vengono salvate</strong> — né sul tuo dispositivo né altrove — e non vengono mai trasmesse.</p>
+
+  <h2>Cosa non fa l'app</h2>
+  <ul>
+    <li>Nessun account né accesso di alcun tipo.</li>
+    <li>Nessuna trasmissione dei tuoi dati personali fuori dal dispositivo. I tuoi dati sono conservati solo localmente: l'app non carica, sincronizza o condivide nulla.</li>
+    <li>Nessun SDK di analisi, telemetria, segnalazione di arresti anomali o pubblicità.</li>
+    <li>Nessun servizio di terze parti riceve automaticamente dati dall'app. (Se scegli di condividere un file di esportazione, l'app o la persona con cui lo condividi riceve quel file: vedi sotto.)</li>
+    <li>La versione pubblicata di Pausa non effettua richieste di rete. L'app include l'autorizzazione <code>android.permission.INTERNET</code> perché il framework di compilazione la dichiara per impostazione predefinita; Pausa non la usa per contattare alcun server.</li>
+  </ul>
+  <p>Nei termini usati dalla sezione Sicurezza dei dati di Google Play: poiché nulla viene trasmesso fuori dal tuo dispositivo, Pausa non raccoglie e non condivide alcun dato.</p>
+
+  <h2>Notifiche</h2>
+  <p>Promemoria, notifiche di fase e di obiettivo e un avviso facoltativo quattro giorni dopo la fine del tuo ultimo digiuno sono tutti programmati dall'app localmente sul tuo dispositivo. Non è coinvolto alcun servizio di notifica esterno al telefono. Nell'app scegli quali ricevere e puoi impostare le ore di silenzio, e uno schermo bloccato non mostra nulla di Pausa. L'impostazione «Notifiche dettagliate», nella sezione Privacy dell'app, ti permette di scegliere se le notifiche indicano il tuo digiuno, le fasi e gli orari, oppure non mostrano alcun dettaglio sul digiuno; puoi anche disattivare del tutto le notifiche nelle impostazioni di sistema.</p>
+
+  <h2>Blocco dell'app</h2>
+  <p>Se attivi il blocco dell'app, Pausa ti chiede lo sblocco del telefono stesso (impronta digitale, volto oppure PIN, sequenza o password del telefono) ogni volta che si avvia, e non mostra nessuno dei tuoi dati finché non sblocchi. La verifica la fa Android: Pausa non riceve né conserva mai la tua impronta digitale, i dati del volto o il PIN, ma solo il fatto che il blocco è attivo. Finché è attivo, l'anteprima dell'app tra le app recenti è nascosta.</p>
+
+  <h2>Esportazione e importazione</h2>
+  <p>Puoi esportare i tuoi dati come file in qualsiasi momento. L'esportazione viene creata sul tuo dispositivo e viene salvata o condivisa solo tramite la destinazione che scegli. Pausa non riceve il file esportato e non lo invia da nessuna parte di sua iniziativa. Una volta che salvi o condividi un file con un'altra app, un altro servizio o un'altra persona, si applicano le pratiche sulla privacy di quel destinatario. L'importazione legge un file che selezioni tu.</p>
+
+  <h2>Backup ed eliminazione dei tuoi dati</h2>
+  <p>Pausa non partecipa al backup automatico di Android, quindi i tuoi dati sui digiuni non vengono copiati nei backup del dispositivo o nel cloud.</p>
+  <p>L'app include l'opzione «Elimina tutti i dati», che cancella in modo permanente ogni digiuno, impostazione e promemoria salvato da Pausa sul dispositivo. Anche disinstallare l'app ne rimuove i dati locali. Nessuna delle due azioni elimina i file di esportazione che hai salvato o condiviso altrove in precedenza: vanno eliminati separatamente, ovunque tu li abbia messi.</p>
+
+  <h2>I tuoi diritti (UE/SEE, Regno Unito, Brasile e leggi simili)</h2>
+  <p>Poiché i tuoi dati non lasciano mai il tuo dispositivo, eserciti i tuoi diritti direttamente nell'app: puoi vedere i tuoi dati (accesso), correggere gli orari di un digiuno e modificarne o cancellarne l'umore (rettifica), esportarne una copia (portabilità) e cancellare tutto con «Elimina tutti i dati» o disinstallando l'app (cancellazione). Non esiste alcuna copia su un server da richiedere o correggere.</p>
+  <ul>
+    <li><strong>Titolare del trattamento:</strong> lo sviluppatore individuale che pubblica Pausa su Google Play; contatti qui sotto.</li>
+    <li><strong>Base giuridica:</strong> la tua cronologia dei digiuni e le tue impostazioni sono trattate sul tuo dispositivo per fornire il servizio che hai richiesto (art. 6, par. 1, lett. b) del GDPR). Le voci relative alla salute che scegli di aggiungere — valutazioni dell'umore, note — sono trattate solo perché le inserisci tu, con il tuo consenso (art. 9, par. 2, lett. a) del GDPR); puoi revocarlo in qualsiasi momento cancellando un umore o eliminando il digiuno.</li>
+    <li><strong>Conservazione:</strong> i dati restano sul tuo dispositivo finché non li elimini o disinstalli l'app. Nulla viene conservato altrove.</li>
+    <li><strong>Trasferimenti internazionali:</strong> nessuno: nessun dato viene trasferito fuori dal tuo dispositivo.</li>
+    <li><strong>Reclami:</strong> puoi proporre reclamo alla tua autorità locale per la protezione dei dati (nell'UE/SEE, la tua autorità di controllo nazionale; in Brasile, l'ANPD).</li>
+  </ul>
+
+  <h2>Link esterni</h2>
+  <p>L'app contiene un link alla versione online di questa informativa. Toccandolo si apre il tuo browser: la richiesta la fa il browser, non Pausa.</p>
+
+  <h2>Minori</h2>
+  <p>Pausa è pensata per gli adulti e non è destinata a persone con meno di 18 anni.</p>
+
+  <h2>Modifiche a questa informativa</h2>
+  <p>Se questa informativa cambia, la versione aggiornata sarà pubblicata a questo indirizzo con una nuova data di entrata in vigore. Poiché l'app non trasmette nulla, le modifiche dovrebbero essere rare.</p>
+
+  <h2>Contatti</h2>
+  <p>Domande su questa informativa o sui tuoi dati: <a href="mailto:arleybls@gmail.com">arleybls@gmail.com</a></p>
+  </article>
+
+  <article id="pl" lang="pl">
+  <h1>Polityka prywatności</h1>
+  <p class="meta">pausa.fit — The Fasting Companion (aplikacja na Androida, pakiet <code>tech.juniorstudio.pausafit</code>)<br>
+  Data wejścia w życie: 20 października 2026 r.</p>
+  <p class="note">To jest tłumaczenie. W razie rozbieżności rozstrzyga wersja angielska.</p>
+
+  <p class="lead">Pausa przechowuje Twoje dane w Twoim telefonie i nigdzie ich nie wysyła. Nie ma kont, serwerów Pausa, narzędzi analitycznych ani usług podmiotów trzecich w aplikacji, które otrzymywałyby Twoje dane.</p>
+
+  <h2>Co przechowuje aplikacja — wyłącznie na Twoim urządzeniu</h2>
+  <ul>
+    <li>Twoja historia postów: godziny rozpoczęcia i zakończenia, docelowe długości, strefa czasowa, w której zaczął się dany post, oraz każda opcjonalna ocena nastroju lub notatka, którą dodasz.</li>
+    <li>Twoje ustawienia: język, wygląd, schemat kolorów, styl pierścienia, harmonogram i długość postu, wybór przypomnień i powiadomień (w tym godziny ciszy), to, czy blokada aplikacji jest włączona, oraz data pierwszego otwarcia aplikacji.</li>
+  </ul>
+  <p>Wszystko to znajduje się w lokalnej bazie danych i lokalnym magazynie ustawień, w prywatnym obszarze aplikacji w Twoim telefonie. Pausa tego nie przesyła, nie synchronizuje ani nie transmituje. Historia postów, oceny nastroju i notatki mogą być informacjami dotyczącymi zdrowia; Pausa przechowuje je wyłącznie na Twoim urządzeniu i nigdy nie wykorzystuje ich do reklam, nie sprzedaje ich ani nie udostępnia.</p>
+
+  <h2>Pytania o zdrowie podczas konfiguracji</h2>
+  <p>Podczas konfiguracji Pausa zadaje kilka pytań o zdrowie (ciąża lub karmienie piersią, cukrzyca, zaburzenia odżywiania w przeszłości, niedowaga, przyjmowane leki oraz to, czy masz mniej niż 18 lat), aby pokazać odpowiednie wskazówki bezpieczeństwa albo przerwać konfigurację, gdy post mógłby zaszkodzić. Twoje odpowiedzi są używane tylko w tej chwili, do wyboru następnego ekranu. <strong>Nie są zapisywane</strong> — ani na Twoim urządzeniu, ani nigdzie indziej — i nigdy nie są przesyłane.</p>
+
+  <h2>Czego aplikacja nie robi</h2>
+  <ul>
+    <li>Żadnego konta ani logowania jakiegokolwiek rodzaju.</li>
+    <li>Żadnego przesyłania Twoich danych osobowych poza urządzenie. Twoje dane są przechowywane wyłącznie lokalnie — aplikacja niczego nie wysyła, nie synchronizuje ani nie udostępnia.</li>
+    <li>Żadnych SDK do analityki, telemetrii, raportowania awarii ani reklam.</li>
+    <li>Żadna usługa podmiotu trzeciego nie otrzymuje automatycznie danych z aplikacji. (Jeśli zdecydujesz się udostępnić plik eksportu, aplikacja lub osoba, której go udostępnisz, otrzyma ten plik — zob. niżej).</li>
+    <li>Opublikowana wersja Pausa nie wykonuje żadnych żądań sieciowych. Aplikacja zawiera uprawnienie <code>android.permission.INTERNET</code>, ponieważ framework kompilacji deklaruje je domyślnie; Pausa nie używa go do łączenia się z żadnym serwerem.</li>
+  </ul>
+  <p>W rozumieniu sekcji „Bezpieczeństwo danych” w Google Play: ponieważ nic nie jest przesyłane poza Twoje urządzenie, Pausa nie zbiera żadnych danych i nie udostępnia żadnych danych.</p>
+
+  <h2>Powiadomienia</h2>
+  <p>Przypomnienia, powiadomienia o fazach i celu oraz opcjonalna zachęta cztery dni po zakończeniu ostatniego postu są planowane przez aplikację lokalnie na Twoim urządzeniu. Nie uczestniczy w tym żadna usługa powiadomień poza Twoim telefonem. W aplikacji wybierasz, które z nich otrzymujesz, i możesz ustawić godziny ciszy, a zablokowany ekran nie pokazuje niczego z Pausa. Ustawienie „Szczegółowe powiadomienia” w sekcji „Prywatność” aplikacji pozwala wybrać, czy powiadomienia podają Twój post, fazy i godziny, czy nie pokazują żadnych szczegółów postu; możesz też całkowicie wyłączyć powiadomienia w ustawieniach systemu.</p>
+
+  <h2>Blokada aplikacji</h2>
+  <p>Jeśli włączysz blokadę aplikacji, Pausa przy każdym uruchomieniu prosi o odblokowanie samego telefonu (odcisk palca, twarz albo PIN, wzór lub hasło telefonu) i nie pokazuje żadnych Twoich danych, dopóki nie odblokujesz. Sprawdzaniem zajmuje się Android: Pausa nigdy nie otrzymuje ani nie przechowuje Twojego odcisku palca, danych twarzy ani PIN-u, a jedynie informację, że blokada jest włączona. Dopóki jest włączona, podgląd aplikacji na liście ostatnich aplikacji jest ukryty.</p>
+
+  <h2>Eksport i import</h2>
+  <p>W każdej chwili możesz wyeksportować swoje dane do pliku. Eksport powstaje na Twoim urządzeniu i jest zapisywany lub udostępniany wyłącznie przez wybrane przez Ciebie miejsce docelowe. Pausa nie otrzymuje wyeksportowanego pliku ani nigdzie go sama nie wysyła. Gdy zapiszesz lub udostępnisz plik innej aplikacji, usłudze lub osobie, obowiązują zasady prywatności tego odbiorcy. Import odczytuje plik, który wybierzesz.</p>
+
+  <h2>Kopie zapasowe i usuwanie danych</h2>
+  <p>Pausa nie korzysta z automatycznej kopii zapasowej Androida, więc Twoje dane o postach nie są kopiowane do kopii zapasowych urządzenia ani chmury.</p>
+  <p>Aplikacja ma opcję „Usuń wszystkie dane”, która trwale usuwa każdy post, ustawienie i przypomnienie zapisane przez Pausa na urządzeniu. Odinstalowanie aplikacji również usuwa jej dane lokalne. Żadne z tych działań nie usuwa plików eksportu zapisanych lub udostępnionych wcześniej gdzie indziej — trzeba je usunąć osobno, tam, gdzie zostały umieszczone.</p>
+
+  <h2>Twoje prawa (UE/EOG, Wielka Brytania, Brazylia i podobne przepisy)</h2>
+  <p>Ponieważ Twoje dane nigdy nie opuszczają urządzenia, swoje prawa wykonujesz bezpośrednio w aplikacji: możesz przeglądać swoje dane (dostęp), poprawiać godziny postu oraz zmieniać lub usuwać jego nastrój (sprostowanie), wyeksportować kopię (przenoszenie) i usunąć wszystko opcją „Usuń wszystkie dane” lub odinstalowując aplikację (usunięcie). Nie istnieje żadna kopia na serwerze, której można by zażądać lub którą można by poprawić.</p>
+  <ul>
+    <li><strong>Administrator danych:</strong> indywidualny deweloper, który publikuje Pausa w Google Play; kontakt poniżej.</li>
+    <li><strong>Podstawa prawna:</strong> Twoja historia postów i ustawienia są przetwarzane na Twoim urządzeniu w celu świadczenia usługi, o którą prosisz (art. 6 ust. 1 lit. b RODO). Wpisy dotyczące zdrowia, które decydujesz się dodać — oceny nastroju, notatki — są przetwarzane wyłącznie dlatego, że je wprowadzasz, za Twoją zgodą (art. 9 ust. 2 lit. a RODO); możesz ją wycofać w dowolnym momencie, usuwając nastrój lub usuwając post.</li>
+    <li><strong>Okres przechowywania:</strong> dane pozostają na Twoim urządzeniu, dopóki ich nie usuniesz lub nie odinstalujesz aplikacji. Nic nie jest przechowywane nigdzie indziej.</li>
+    <li><strong>Przekazywanie danych za granicę:</strong> brak — żadne dane nie są przekazywane poza Twoje urządzenie.</li>
+    <li><strong>Skargi:</strong> możesz złożyć skargę do lokalnego organu ochrony danych (w UE/EOG do krajowego organu nadzorczego; w Brazylii do ANPD).</li>
+  </ul>
+
+  <h2>Linki zewnętrzne</h2>
+  <p>Aplikacja zawiera link do internetowej wersji tej polityki. Dotknięcie go otwiera przeglądarkę — żądanie wysyła przeglądarka, a nie Pausa.</p>
+
+  <h2>Dzieci</h2>
+  <p>Pausa jest przeznaczona dla dorosłych i nie jest skierowana do osób poniżej 18. roku życia.</p>
+
+  <h2>Zmiany tej polityki</h2>
+  <p>Jeśli ta polityka się zmieni, zaktualizowana wersja zostanie opublikowana pod tym adresem z nową datą wejścia w życie. Ponieważ aplikacja niczego nie przesyła, zmiany powinny być rzadkie.</p>
+
+  <h2>Kontakt</h2>
+  <p>Pytania dotyczące tej polityki lub Twoich danych: <a href="mailto:arleybls@gmail.com">arleybls@gmail.com</a></p>
+  </article>
+
+  <script>
+    // One language at a time: the one in the link (#pt, #nl, …), else the
+    // browser's, else English. Without script every language shows, in order.
+    (function () {
+      var codes = ["en", "pt", "nl", "fr", "de", "es", "it", "pl"];
+      function pick() {
+        var hash = location.hash.slice(1);
+        if (codes.indexOf(hash) >= 0) return hash;
+        var prefs = navigator.languages || [navigator.language || "en"];
+        for (var i = 0; i < prefs.length; i++) {
+          var code = String(prefs[i]).slice(0, 2).toLowerCase();
+          if (codes.indexOf(code) >= 0) return code;
+        }
+        return "en";
+      }
+      function show() {
+        var current = pick();
+        codes.forEach(function (code) {
+          document.getElementById(code).hidden = code !== current;
+        });
+        document.documentElement.lang = document.getElementById(current).lang;
+        document.querySelectorAll(".langs a").forEach(function (a) {
+          a.setAttribute("aria-current", a.hash === "#" + current ? "true" : "false");
+        });
+      }
+      window.addEventListener("hashchange", function () { show(); window.scrollTo(0, 0); });
+      show();
+    })();
+  </script>
 </body>
 </html>
